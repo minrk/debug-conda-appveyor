@@ -18,8 +18,8 @@ install:
   - cmd: call %CONDA_INSTALL_LOCN%\Scripts\activate.bat
   - cmd: conda config --set show_channel_urls true
   - cmd: conda update --yes --quiet conda
-  - cmd: conda install --yes -c defaults conda=4.3.4
-  - cmd: conda install --yes -c conda-forge nbconvert=5.3.1
+  - cmd: conda install --yes --quiet -c defaults conda=4.3.30
+  - cmd: conda install --yes --quiet -c conda-forge tqdm
 
 test_script:
   - cmd: echo "ok"
