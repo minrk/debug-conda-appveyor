@@ -19,8 +19,7 @@ install:
   - cmd: conda config --set show_channel_urls true
   - cmd: conda update --yes --quiet conda
   - cmd: conda install --yes -c defaults conda=4.3.29
-  - cmd: conda config --set auto_update_conda false
-  - cmd: conda install --yes -c conda-forge nbconvert
+  - cmd: conda install --yes -c conda-forge nbconvert=5.3.0
 
 test_script:
   - cmd: echo "ok"
