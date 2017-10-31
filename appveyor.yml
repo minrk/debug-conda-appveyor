@@ -17,7 +17,7 @@ build: off
 install:
   - cmd: call %CONDA_INSTALL_LOCN%\Scripts\activate.bat
   - cmd: conda config --set show_channel_urls true
-  - cmd: conda install --yes -c defaults conda=4.3.30
+  - cmd: conda install --yes -c defaults conda=4.3.29
   - cmd: conda install --yes -c conda-forge nbconvert
 
 test_script:
